@@ -53,7 +53,7 @@ follow the usual 2 * 2 table structure from the
 
 ### **OTHER SPECIFICATIONS AND ASSUMPTIONS**
 
-**Prior Immunity* **
+**Prior Immunity***
 
 *   Prior influenza immunity is assumed to be a combination of residual immunity
 from previous infections and previous seasonal vaccinations. In a typical 
@@ -151,10 +151,8 @@ abstract.**
 *    Both mechanistic/time-resolved and overall statistical model projections 
 are encouraged to participate. To facilitate this we will accept projections by 
 state and for the US overall for either (or both) of:
-    *    Weekly projections of incident outcomes (infections, symptomatic cases,
-    hospitalizations, deaths)
-    *    Overall season peak size, peak timing, total size (infections, 
-    hospitalizations, deaths)
+	 * Weekly projections of incident outcomes (infections, symptomatic cases, hospitalizations, deaths)
+	 * Overall season peak size, peak timing, total size (infections, hospitalizations, deaths)
 
 </br>
 
