@@ -1,3 +1,4 @@
+<img src= "https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/logo.png">
 # Flu Scenario Modeling Hub
 
 Last updated: 7-7-2022 for **Round 1 Scenarios**.
