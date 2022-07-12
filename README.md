@@ -272,10 +272,10 @@ contact Katriona Shea at k-shea@psu.edu.
 
 ## The Flu Scenario Modeling Hub Coordination Team    
 
+ - Shaun Truelove, Johns Hopkins University
+ - Cécile Viboud, NIH Fogarty
  - Justin Lessler, University of North Carolina
  - Katriona Shea, Penn State University
- - Cécile Viboud, NIH Fogarty
- - Shaun Truelove, Johns Hopkins University
  - Rebecca Borchering, Penn State University
  - Claire Smith, Johns Hopkins University
  - Emily Howerton, Penn State University
