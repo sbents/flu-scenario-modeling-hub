@@ -1,0 +1,13 @@
+#!!NOTE: THE METADATA BELOW ARE PURELY FOR THE PURPOSE OF DEMONSTRATING FILE FORMAT AND SHOULD NOT BE REGARDED IN ANY WAY AS INDICATIVE OF REASONABLE ASSUMPTIONS!!
+
+team_name: MyTeam
+model_name: MyModel
+model_abbr: MyTeam-MyModel
+model_contributors: Smith J (affiliation1) <user1@adress>, Smith S (affiliation1) <user2@adress>, Smith C (affiliation2) <user3@adress>.
+website_url: https://MyModel.website
+model_version: "1.0"
+methods: this the method description of the model. 
+license: cc-by-4.0
+citation: "Smith J, Smith S, Smith C. MyModel is the best model. Nature. 2020 Aug. doi: 10.1038/s12345-678-90123-45."
+
+
