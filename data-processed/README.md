@@ -282,6 +282,7 @@ Values in the  `age_group` column are:
 Or any aggregation of the previous list, for example: "0-17". 
 If the submissions files contain projections for the overall population, please use `0-130` as age-group. 
 
+For the `peak` targets, only the age-group `0-130` is required.
 
 ## Scenario validation
 
