@@ -138,7 +138,7 @@ Values in the `target` column must be a character (string) and be one of the fol
 - "peak size hosp"  
 - "N wk ahead peak time hosp"  where N is a number between 1 and 42
 
-For week-ahead scenarios, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which run Sunday through Saturday.
+For week-ahead scenarios, we will use the specification of epidemiological weeks (EWs) defined by the US CDC which run Sunday through Saturday.
 
 There are standard software packages to convert from dates to epidemic weeks and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for python.
 
@@ -290,7 +290,7 @@ To ensure proper data formatting, validation on the pull requests for new data i
 For the first round of submissions, the automated pull requests may not work yet. In this case, a manual validation will be run and the output will be posted as message in the Pull-request.  
 
 The intent for these tests are to validate the requirements above and 
-specifically enumerated [on the wiki](https://github.com/midas-network/flu-scenario-modeling-hub/wiki/Scenario-File-Checks).
+specifically enumerated [on the wiki](https://github.com/midas-network/flu-scenario-modeling-hub/wiki/Scenario-File-Checks) (in construction).
 Please [let us know](https://github.com/midas-network/flu-scenario-modeling-hub/issues) if the wiki is inaccurate.
 
 
