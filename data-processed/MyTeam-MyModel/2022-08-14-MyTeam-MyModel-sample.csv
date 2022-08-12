@@ -2,20 +2,20 @@ scenario_id,scenario_name,model_projection_date,target,target_end_date,sample,lo
 A-2022-08-14,lowVac_optImm,2022-08-14,1 wk ahead inc death,2022-08-20,1,US,22803.75006,0-4
 A-2022-08-14,lowVac_optImm,2022-08-14,2 wk ahead inc death,2022-08-27,1,US,27487.18507,0-4
 A-2022-08-14,lowVac_optImm,2022-08-14,3 wk ahead inc death,2022-09-03,1,US,33132.50413,0-4
-,,,,,,,,,
+,,,,,,,,,,
 A-2022-08-14,lowVac_optImm,2022-08-14,41 wk ahead inc death,2023-05-27,1,US,615629.7186,0-4
 A-2022-08-14,lowVac_optImm,2022-08-14,42 wk ahead inc death,2023-06-03,1,US,699938.7756,0-4
 A-2022-08-14,lowVac_optImm,2022-08-14,1 wk ahead inc death,2022-08-20,2,US,2803.75006,0-4
 A-2022-08-14,lowVac_optImm,2022-08-14,2 wk ahead inc death,2022-08-27,2,US,2787.18507,0-4
 A-2022-08-14,lowVac_optImm,2022-08-14,3 wk ahead inc death,2022-09-03,2,US,3332.50413,0-4
-,,,,,,,,,
+,,,,,,,,,,
 A-2022-08-14,lowVac_optImm,2022-08-14,41 wk ahead inc death,2023-05-27,2,US,61629.7186,0-4
 A-2022-08-14,lowVac_optImm,2022-08-14,42 wk ahead inc death,2023-06-03,2,US,69938.7756,0-4
-,,,,,,,,,
+,,,,,,,,,,
 D-2022-08-14,highVac_pesImm,2022-08-14,1 wk ahead inc hosp,2022-08-20,1,09,25456.4333,65-130
 D-2022-08-14,highVac_pesImm,2022-08-14,2 wk ahead inc hosp,2022-08-27,1,09,29487.18507,65-130
 D-2022-08-14,highVac_pesImm,2022-08-14,3 wk ahead inc hosp,2022-09-03,1,09,36132.50413,65-130
-,,,,,,,,,
+,,,,,,,,,,
 D-2022-08-14,highVac_pesImm,2022-08-14,41 wk ahead inc hosp,2023-05-27,1,09,675629.7186,65-130
 D-2022-08-14,highVac_pesImm,2022-08-14,42 wk ahead inc hosp,2023-06-03,1,09,809938.7756,65-130
-,,,,,,,,,
+,,,,,,,,,,
