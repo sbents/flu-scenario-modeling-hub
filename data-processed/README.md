@@ -184,12 +184,11 @@ Predictions for this target will be evaluated against the cumulative number of h
 
 #### N wk ahead peak time hosp
 
-This target is the cumulative probability of the incident hospitalization peak occurring that week  predicted by the model during the week that is N weeks after `model_projection_date`.
+This target is the cumulative probability of the incident hospitalization peak occurring before or during the week that is N weeks after `model_projection_date`. For instance "22 wk ahead peak time hosp" is the probability that hospitalizations peak within the first 22 weeks of the projection period. This cumulative probability will be 1 on the last week of the projection period.
 
 Further, we do not expect a full distribution of quantiles, only “point” values for this target.
 
 Predictions for this target will be evaluated against the week of the peak number of hospitalized cases in 2022-23, as recorded by the U.S. Department of Health & Human Services Flu and COVID-19 system (derived from the prior day influenza admissions variable).
-
 
 #### peak size hosp
 
