@@ -12,8 +12,8 @@ the validation wiki page. The automatic validation process is currently in const
 
 ## Example
 
-See [this file](https://github.com/midas-network/flu-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2022-08-14-MyTeam-MyModel.csv) and [this metadata file](https://github.com/midas-network/flu-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt) for an illustration of part of a (hypothetical) submission files.
-An example of the “sample” format file submission is also available [here](https://github.com/midas-network/flu-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2022-08-14-MyTeam-MyModel-sample.csv).
+See [this file](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MyTeam-MyModel/2022-08-14_MyTeam-MyModel.csv) and [this metadata file](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt) for an illustration of part of a (hypothetical) submission files.
+An example of the “sample” format file submission is also available [here](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MyTeam-MyModel/2022-08-14-MyTeam-MyModel-sample.csv).
 
 
 ## Subdirectory
