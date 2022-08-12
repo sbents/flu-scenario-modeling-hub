@@ -39,7 +39,7 @@ Those interested to participate should email scenariohub@midasnetwork.us .
 Model projections should be submitted via pull request to the data-processed 
 folder of this GitHub repository. Technical instructions for submission and 
 required file formats can be found 
-[here](https://github.com/midas-network/flu-scenario-modeling-hub/blob/master/data-processed/README.md).
+[here](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/README.md).
 
 </br>
 
@@ -321,7 +321,7 @@ illnesses) computed from medical insurance claims: https://cmu-delphi.github.io/
 Groups interested in participating can submit model projections for each 
 scenario in a CSV file formatted according to our specifications, and a metadata
 file with a description of model information. See 
-[here](https://github.com/midas-network/flu-scenario-modeling-hub/blob/master/data-processed/README.md) 
+[here](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/README.md) 
 for technical submission requirements. Groups can submit their contributions as 
 often as they want; the date of when a model projection was made (projection 
 date) is recorded in the model submission file.   
