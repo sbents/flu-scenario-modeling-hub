@@ -18,7 +18,7 @@ An example of the “sample” format file submission is also available [here](h
 
 ## Subdirectory
 
-Each subdirectory within the [data-processed/](data-processed/) directory has the format:
+Each subdirectory within the [data-processed/](./) directory has the format:
 
     team-model
     
