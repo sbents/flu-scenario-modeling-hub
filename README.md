@@ -112,7 +112,7 @@ positive flu viruses)
 
 *   We assume that VE against hospitalizations and medical illnesses is the same. 
 We index high VE [(overall estimate 60%)](https://pubmed.ncbi.nlm.nih.gov/22843783/)
- on the 2010-11 season and low VE [(overall estimate 30%)](https://www.cdc.gov/flu/vaccines-work/2018-2019.htm) 
+ on the 2010-11 season and low VE [(overall estimate 30%)](https://www.cdc.gov/flu/vaccines-work/2018-2019.html) 
  on the 2018-2019 season. 
 
 
