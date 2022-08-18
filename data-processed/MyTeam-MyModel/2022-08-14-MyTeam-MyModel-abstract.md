@@ -39,9 +39,6 @@ FILL
 FILL
 
 ## Age Group Variability
-### Age-stratification levels
-FILL
-
 ### Age-stratification differences (susceptibility, vaccine effectiveness, waning)
 FILL
 
