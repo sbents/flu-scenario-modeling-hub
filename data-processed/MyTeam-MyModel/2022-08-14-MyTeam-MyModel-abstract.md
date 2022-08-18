@@ -8,11 +8,14 @@ FILL
 FILL
 
 # Model Assumptions
-## Prior Immunity
+## Immunity assumptions
 ### Number/type of immune classes considered
 FILL
 
-### Initial proportion of population with residual immunity from previous infections and previous seasonal vaccinations, by age (if available)
+### Initial proportion of population with residual immunity from previous infections and previous seasonal vaccinations (by age, if available)
+FILL
+
+### Waning immunity throughout the season (yes, no, differs for vaccination and natural infection)
 FILL
 
 ## Details on Influenza Strain(s)
@@ -23,13 +26,6 @@ FILL
 FILL
 
 ### Are interactions between strains/subtypes implicitly modeled?
-FILL
-
-## Immunity
-### Natural immunity waning details
-FILL
-
-### Vaccine-induced immunity waning details
 FILL
 
 ## Seasonality implementation
