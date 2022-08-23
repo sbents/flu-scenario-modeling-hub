@@ -1,10 +1,10 @@
 # Summary of Results
 This model provides influenza scenario projections for the state of California (CA). Optimistic prior immunity scenarios roughly align with historical patterns of CA hospitalization trends (2014-2017 & 2018-2020). Pessimistic prior immunity scenarios roughly align with historical patterns of CA hospitalization during the 2017-2018 flu season. 
 
-- For the high vaccination coverage, optimistic prior immunity scenario (scenario A), the model predicts a peak weekly incidence hospitalization size of 1630 individuals (50th percentile) and a cumulative hospitalization burden of 11974 (50th percentile).
-- For the high vaccination coverage, pessimistic prior immunity scenario the model predicts a peak weekly incidence hospitalization size of	4600 individuals (50th percentile) and a cumulative hospitalization burden of 25156 (50th percentile).
-- For the low vaccination coverage, optimistic prior immunity scenario (scenario C), the model predicts a peak weekly incidence hospitalization size of 2044 individuals (50th percentile) and a cumulative hospitalization burden of 14889 (50th percentile).
-- For the low vaccination coverage, pessimistic prior immunity scenario (scenario D), the model predicts a peak weekly incidence hospitalization size of 5594 individuals (50th percentile) and a cumulative hospitalization burden of 30635 (50th percentile).
+- For the high vaccination coverage, optimistic prior immunity scenario (scenario A), the model predicts a peak weekly incidence hospitalization size of 1642 individuals (50th percentile) and a cumulative hospitalization burden of 12017 (50th percentile).
+- For the high vaccination coverage, pessimistic prior immunity scenario the model predicts a peak weekly incidence hospitalization size of	4580 individuals (50th percentile) and a cumulative hospitalization burden of 24919 (50th percentile).
+- For the low vaccination coverage, optimistic prior immunity scenario (scenario C), the model predicts a peak weekly incidence hospitalization size of 2003 individuals (50th percentile) and a cumulative hospitalization burden of 14737 (50th percentile).
+- For the low vaccination coverage, pessimistic prior immunity scenario (scenario D), the model predicts a peak weekly incidence hospitalization size of 5633 individuals (50th percentile) and a cumulative hospitalization burden of 30804 (50th percentile).
 
 
 # General Model Description
@@ -20,6 +20,8 @@ This model provides scenarios for the state of CA. The model is a stochastic, me
 - Hospitalized= $H(t)$
 - Dead= $D(t)$
 - Recovered= $R(t)$
+
+Scenario results are based on a sample size of 500 simulations per scenario. 
 
 # Explanation of observed dynamics given model assumptions
 
