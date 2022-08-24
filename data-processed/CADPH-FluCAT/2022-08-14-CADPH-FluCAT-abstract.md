@@ -58,7 +58,7 @@ $R_i$ is then proportional to the rate of natural immunity waning for age class 
 - Ages 65+: $R_5(t=0) =0.2898$
 
 ### Waning immunity throughout the season (yes, no, differs for vaccination and natural infection)
-#### Natural immunity waning details
+**Natural immunity waning details:**
 The rate at which natural immunity wanes is dependent upon age class according to [Kucharski et al. 2015, Fig.4](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002082#pbio-1002082-g004):
 
 - Ages 0-4: $\kappa_1= 1/(10/4.5*365)$
@@ -68,7 +68,7 @@ The rate at which natural immunity wanes is dependent upon age class according t
 - Ages 65+: $\kappa_5= 1/(10/1.5*365)$ 
 
 
-#### Vaccine-induced immunity waning details
+**Vaccine-induced immunity waning details:**
 We assume that vaccine-induced immunity does not wane within a single season. This is an area in progress for future iterations of the model.
 
 ## Details on Influenza Strain(s)
@@ -112,8 +112,8 @@ Initial conditions for prior immunity and waning of prior immunity by age class 
 ### VE against infection (by age, if relevant)
 The model assumes that VE against transmission is negligble. 
 
-### VE against hospitalization (by age, if relevant)
-Adjusted for age group from: [Treanor et al. 2012, Table 3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3657521/); [CDC 2018-2019 season VE](https://www.cdc.gov/flu/vaccines-work/2018-2019.html)
+### VE against mortality (by age, if relevant)
+The model does not explicitly include VE against mortality, but does include VE against hospitalization, which is adjusted by age group from: [Treanor et al. 2012, Table 3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3657521/); [CDC 2018-2019 season VE](https://www.cdc.gov/flu/vaccines-work/2018-2019.html)
 
 **Optimistic**
 
@@ -137,7 +137,7 @@ The model assumes that VE against infection is negligible.
 ## Other Model Assumptions
 The model includes assortative mixing by age group based off of POLYMOD survey data [Fumanelli et al. 2012 (UK)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002673).
 
-### Parameter value estimates
+**Parameter value estimates:**
 *Parameters that were adjusted such that optimistic prior immunity scenarios reasonably replicated historical flu hospitalization trends. 
 
 | Parameter     | Value         | Description                     | Source/Notes       |
@@ -154,6 +154,5 @@ The model includes assortative mixing by age group based off of POLYMOD survey d
 | $\theta$     | $\theta_1 =0.0092$, $\theta_2 =0.013$, $\theta_3 =0.029$, $\theta_4 =0.057$, $\theta_5 =0.089$        | probability of death given hospitalization   | [FluServ-NET](https://gis.cdc.gov/GRASP/Fluview/FluHospRates.html) |
 | $VE_h$      | **Optimistic:** .58 (0-4 y/o), 0.57 (5-17 y/o), 0.51 (18-49 y/o), 0.51 (50-64 y/o), 0.36 (65+ y/o) ; **Pessimistic:** 0.48 (0-4 y/o), 0.20 (5-17 y/o), 0.25 (18-49 y/o), 0.14 (50-64 y/o), 0.12 (65+ y/o)| Vaccine effectiveness against medically attended illness and/or hospitalization   | Scenario Specifications; [Treanor et al. 2012, Table 3] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3657521/); [CDC 2018-2019 season VE](https://www.cdc.gov/flu/vaccines-work/2018-2019.html)|
 
-## Funding/Conflict of Interest
-The views and opinions expressed by the authors are their own and do not necessarily represent the views and opinions of the California Department of Public Health or the California Health and Human Services Agency.
+
 
