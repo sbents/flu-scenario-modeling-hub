@@ -226,10 +226,10 @@ All cumulative outcomes start at 0 at the start of the projection period, i.e. o
 
 | Scenario | Scenario name for submission file | Scenario ID for submission file |
 | ---------------------------------------------- |:---------------------------------:|:-------------------------------:|
-| Scenario A. High vaccination coverage, no new variant            | highVac_optImm | A-2022-08-14 |
-| Scenario B. High vaccination coverage, new immune escape variant | highVac_pesImm | B-2022-08-14 |
-| Scenario C. Low vaccination coverage, no new variant             | lowVac_optImm  | C-2022-08-14 |
-| Scenario D. Low vaccination coverage, new immune escape variant  | lowVac_pesImm  | D-2022-08-14 | 
+| Scenario A. High vaccine protection, Optimistic immunity         | highVac_optImm | A-2022-08-14 |
+| Scenario B. High vaccine protection, Pessimistic immunity        | highVac_pesImm | B-2022-08-14 |
+| Scenario C. Low vaccine protection, Optimistic immunity          | lowVac_optImm  | C-2022-08-14 |
+| Scenario D. Low vaccine protection, Pessimistic immunity         | lowVac_pesImm  | D-2022-08-14 | 
 *   **Due date**: Aug 16, 2022 
 *   **End date for fitting data**: Aug 13, 2022 
 *   **Start date for scenarios**: Aug 14, 2022  (first date of simulated 
