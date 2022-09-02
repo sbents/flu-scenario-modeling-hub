@@ -268,7 +268,7 @@ distribution function (CDF) for the `target`, `location`, and `quantile` associa
 For the `peak time hosp` target, the values in the `value` column are non-negative numbers between 0 and 1.  
 
 
-### `age_group ` (optional)
+### `age_group ` 
 
 Values in the  `age_group` column are:
 
@@ -277,9 +277,10 @@ Values in the  `age_group` column are:
 - "18-49"
 - "50-64"
 - "65-130"
-
 Or any aggregation of the previous list, for example: "0-17". 
 If the submissions files contain projections for the overall population, please use `0-130` as age-group. 
+
+The `age_group` are optionals, however, the submission should contain at least one age group: `0-130`, if multiples `age_group` are provided the overall population should still be provided with the age group `0-130`. 
 
 For the `peak` targets, only the age-group `0-130` is required.
 
