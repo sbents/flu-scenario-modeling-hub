@@ -13,51 +13,53 @@ FILL
 # Model Assumptions
 ## Immunity assumptions
 ### Number/type of immune classes considered
-FILL
+2: Immune/Not Immune
 
 ### Initial proportion of population with residual immunity from previous infections and previous seasonal vaccinations (by age, if available)
-FILL
+We assume a prior immunity of 33% or 16.5% depending on the scenarios, not from previous infections/vaccinations. 
 
 ### Waning immunity throughout the season (yes, no, differs for vaccination and natural infection)
-FILL
+No
 
 ## Details on Influenza Strain(s)
 ### Number of strains/subtypes included in model
-FILL
+Single strain model
 
 ### Strain(s) specifications (immune escape, transmissibility)
 FILL
 
 ### Are interactions between strains/subtypes implicitly modeled?
-FILL
+No
 
 ## Seasonality implementation
 FILL
 
 ## Initial Conditions
 ### Details on circulating strains at the start of the projection period
-FILL
+Single strain model
 
 ## Non-pharmaceutical interventions (NPIs)
-FILL
+Not considered
 
 ## Age Group Variability
 ### No of age groups
-FILL
+0-4, 5-17, 18-49, 50-64, and 65+.
 
 ### Age-stratification differences (susceptibility, vaccine effectiveness, waning)
-FILL
+Each age group is considered independently of one another. 
 
 ## State-level Variability
 ### State-stratification details (prior immunity, vaccine coverage)
-FILL
+States are considered independently of eachother. Same prior immunity is used across all states and the vaccine coverage used is from the provided data between the different states.
 
 ## Vaccine Effectiveness
 ### VE against infection (by age, if relevant)
-FILL
+High VE Scenarios: 62.4000   21.9231   51.0000   51.0000   36.0000 for 0-4, 5-17, 18-49, 50-64, and 65+.
+Low VE Scnearios: 48.0000   19.2492   25.0000   14.0000   12.0000 for 0-4, 5-17, 18-49, 50-64, and 65+.
 
 ### VE against mortality (by age, if relevant)
-FILL
+High VE Scenarios: 62.4000   21.9231   51.0000   51.0000   36.0000 for 0-4, 5-17, 18-49, 50-64, and 65+.
+Low VE Scnearios: 48.0000   19.2492   25.0000   14.0000   12.0000 for 0-4, 5-17, 18-49, 50-64, and 65+.
 
 ### VE against transmission (by age, if relevant)
 FILL
