@@ -16,7 +16,7 @@ FILL
 2: Immune/Not Immune
 
 ### Initial proportion of population with residual immunity from previous infections and previous seasonal vaccinations (by age, if available)
-We assume a prior immunity of 33% or 16.5% depending on the scenarios, not from previous infections/vaccinations. 
+We assume a prior immunity of 33% or 16.5% depending on the scenarios, not taken from previous infections/vaccinations. 
 
 ### Waning immunity throughout the season (yes, no, differs for vaccination and natural infection)
 No
