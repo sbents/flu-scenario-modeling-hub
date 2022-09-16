@@ -1,0 +1,9 @@
+team_name: CDDEP
+model_name: FluCompModel
+model_abbr: CDDEP-FluCompModel
+model_contributors: Fardad Haghpanah <haghpanah@cddep.org>, Eili Klein <klein@cddep.org>, 
+website_url: TBD
+model_version: "1.0"
+methods: age-stratified compartmental model 
+license: CDDEP
+citation: TBD
