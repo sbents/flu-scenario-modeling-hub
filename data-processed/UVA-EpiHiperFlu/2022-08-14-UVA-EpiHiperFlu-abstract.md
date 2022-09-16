@@ -13,6 +13,9 @@ Our single-strain disease model is stratified by age group, and includes symptom
 # Explanation of observed dynamics given model assumptions
 It is expected that hospitalizations are higher with lower prior immunity and with lower vaccine protection. Since our model does not consider waning immunity, the difference in prior immunity (33% vs. 16.5% of the population) is more significant, especially in the early months of the season when current season vaccination is still low. With lower prior immunity (16.5%) the social contact network is still well-connected and the disease can spread fast before vaccination catches up. When vaccination coverage reaches a certain level, infections as well as hospitalizations start to quickly decrease, due to lack of waning.
 
+# Model Calibration
+We calibrate the disease model using a "typical influenza season" setting which is between scenarios A and C. For hospitalization calibration, we use pre-pandemic (seasons from 2010 to 2019) flu burden data from CDC estimates.
+
 # Model Assumptions
 ## Immunity assumptions
 ### Number/type of immune classes considered
