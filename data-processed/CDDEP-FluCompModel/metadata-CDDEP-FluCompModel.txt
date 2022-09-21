@@ -5,5 +5,5 @@ model_contributors: Fardad Haghpanah <haghpanah@cddep.org>, Eili Klein <klein@cd
 website_url: TBD
 model_version: "1.0"
 methods: age-stratified compartmental model 
-license: CDDEP
+license: cc-by-4.0
 citation: TBD
