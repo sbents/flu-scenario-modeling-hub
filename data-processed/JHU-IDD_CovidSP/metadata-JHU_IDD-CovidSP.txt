@@ -1,7 +1,7 @@
 team_name: Johns Hopkins ID Dynamics
 model_name: CovidScenarioPipeline
 model_abbr: JHU_IDD-CovidSP
-model_version: "1.0"
+
 model_contributors: Joseph C. Lemaitre (EPFL), Joshua Kaminsky (Johns Hopkins Infectious  
   Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious 
   Disease Dynamics) <shauntruelove@jhu.edu>, Elizabeth C. Lee (Johns 
@@ -9,25 +9,9 @@ model_contributors: Joseph C. Lemaitre (EPFL), Joshua Kaminsky (Johns Hopkins In
   Disease Dynamics)<justin@jhu.edu>, Claire P. Smith (Johns Hopkins Infectious Disease Dynamics) <csmit390@jhu.edu>,
   Allison Hill (Johns Hopkins Infectious Disease Dynamics) <alhill@jhmi.edu>
 website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
+model_version: "1.0"
 methods: State-level metapopulation model with commuting and stochastic SEIR disease dynamics
   with non-pharmaceutical/behavioral interventions and humidity-driven seasonality.
-modeling_NPI: NA currently
-vaccine_efficacy_transmission: Vaccine efficacy is assumed to be against infection, symptomatic cases, hospitalization, and death independently. Conditional VE is calculated and applied when heirarchical efficacy occurs (e.g., from infection to hospitalization). Vaccine efficacy estimates are assumed based on the scenarios.
-vaccine_efficacy_delay: Immunity is assumed to develop exactly 14 days after vaccination.
-vaccine_hesitancy: Hesitancy is not assumed other than specifically indicated by the scenarios.
-vaccine_immunity_duration: plateaus to 50% of original VE by 6 months (parameterized as an exponential population-level rate)
-natural_immunity_duration: Not applicable
-case_fatality_rate: Not applicable
-infection_fatality_rate: Age-adjusted based on population age distribution and age-distribution of those 
-  \ who have received vaccination. US national IFR set at 0.07%.
-asymptomatics: Not applicable
-age_groups: "0_4", "5_17","18_49","50_64", "65_100"
-importations: Functionality in place, but not currently in use.
-confidence_interval_method: We compute confidence intervals as quantiles across 300 simulations.
-calibration: "We use an  MCMC-like inference procedure that calibrates model outputs to weekly \       
-  \ aggregations of incident confirmed cases and deaths as reported by USA Facts. For the \
-  \ inference of the baseline reproductive number and the case  confirmation to infection ratio, \
-  \ hierarchical grouping terms enable sharing  of strength among counties in the same state."
-spatial_structure: state-level metapopulation accounting for spatial mobility using community data between states.
+team_funding: Centers for Disease Control and Prevention.
 citation: https://www.medrxiv.org/content/10.1101/2020.06.11.20127894v1
 license: MIT
