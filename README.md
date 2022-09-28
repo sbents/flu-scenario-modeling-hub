@@ -419,15 +419,17 @@ Benjamin Hurt,  Bryan Lewis (UVA), Madhav Marathe (UVA)
  - Shaun Truelove, Johns Hopkins University
  - Cécile Viboud, NIH Fogarty
  - Justin Lessler, University of North Carolina
- - Katriona Shea, Penn State University
+ - Sara Loo, Johns Hopkins University
+ - Lucie Contamin, University of Pittsburgh
+ - Emily Howerton, Penn State University
  - Rebecca Borchering, Penn State University
  - Claire Smith, Johns Hopkins University
- - Emily Howerton, Penn State University
- - Nick Reich, University of Massachusetts at Amherst
  - Harry Hochheiser, University of Pittsburgh
+ - Katriona Shea, Penn State University
  - Michael Runge, USGS
- - Lucie Contamin, University of Pittsburgh
- - John Levander, University of Pittsburgh
+ - Erica Carcelen, John Hopkins University
+ - Sung-mok Jung, University of North Carolina
  - J Espino, University of Pittsburgh
- - Luke Mullany, Johns Hopkins University
- - Kaitlin Lovett, John Hopkins University
+ - John Levander, University of Pittsburgh
+ 
+ 
