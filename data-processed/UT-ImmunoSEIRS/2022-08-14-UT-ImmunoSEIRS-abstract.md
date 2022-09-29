@@ -7,6 +7,9 @@ We develop a new two viruses model that explicitly tracks the immunity caused by
 # Explanation of observed dynamics given model assumptions
 The results can be explained by the higher baseline protection that previous infections offers in comparison to the protection offered by vaccines. In addition, immunity provided by vaccines wanes significantly faster than immunity gained through natural infections.
 
+# Model calibration
+We calibrated the model manually by ensuring that the peak number and timing of US hospitalizations is similar to the 2019-2020 season.
+
 # Model Assumptions
 ## Immunity assumptions
 ### Number/type of immune classes considered
