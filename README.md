@@ -382,22 +382,54 @@ contact Katriona Shea at k-shea@psu.edu.
 
 ## Teams and models    
 
-*to be addded*
+*   [*California Department of Public Health — FluCAT*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/CADPH-FluCAT/metadata-CADPH-FluCAT.txt)
+    *   White, L.A. (CADPH), Murray, E. (CADPH), Leon, T.M. (CADPH) 
+*   [*Center For Disease Dynamics, Economics & Policy — FluCompModel*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/CDDEP-FluCompModel/metadata-CDDEP-FluCompModel.txt)
+    *   Fardad Haghpanah, Eili Klein
+*   [*Johns Hopkins ID Dynamics — COVID Scenario Pipeline*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
+    *   Joseph C. Lemaitre (EPFL), Joshua Kaminsky (Johns Hopkins Infectious 
+Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious Disease 
+Dynamics), Elizabeth C. Lee (Johns Hopkins Infectious Disease Dynamics), Justin 
+Lessler (Johns Hopkins Infectious Disease Dynamics), Claire P. Smith (Johns 
+Hopkins Infectious Disease Dynamics), Allison Hill (Johns Hopkins Infectious 
+Disease Dynamics)
+*   [*Northeastern University MOBS Lab — GLEAM FLU*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MOBS_NEU-GLEAM_FLU/metadata-MOBS_NEU-GLEAM_FLU.txt)
+    *   Matteo Chinazzi (Northeastern University, Boston, MA), Jessica T. Davis 
+(Northeastern University, Boston, MA), Kunpeng Mu (Northeastern University, Boston, 
+MA), Alessandro Vespignani (Northeastern University, Boston, MA)
+*   [*Fogarty International Center, National Institutes of Health (NIH) — Flu_TS*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/NIH-Flu_TS/metadata-NIH-Flu_TS.txt)
+    *   Amanda Perofsky (NIH), Cécile Viboud (NIH)
+*   [*University of Notre Dame — FRED*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/NotreDame-FRED/metadata-NotreDame-FRED.txt)
+    *   Guido Espana, Sean Moore, Alex Perkins
+*   [*University of Southern California — SIkJalpha*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
+    *   Ajitesh Srivastava, Majd Al Aawar
+*   [*University of Texas — ImmunoSEIRS*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/UT-ImmunoSEIRS/metadata-UT-ImmunoSEIRS.txt)
+    *   Kaiming Bi (The University of Texas at Austin), Anass Bouchnita (The 
+University of Texas at El Paso), Spencer J. Fox (The University of Georgia), 
+Lauren Ancel Meyers (The University of Texas at Austin), UT COVID-19 Modeling Consortium.
+*   [*University of Virginia Biocomplexity Institute  — EpiHiper*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
+    *   Jiangzhuo Chen (UVA), Stefan Hoops (UVA), Parantapa Bhattacharya (UVA), Dustin 
+Machi (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA)
+*   [*University of Virginia Biocomplexity Institute — FluXSim*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/UVA-FluXSim/metadata-UVA-FluXSim.txt)
+    *   Srini Venkatramanan, Aniruddha Adiga, Przemek Porebski, Brian Klahn, 
+Benjamin Hurt,  Bryan Lewis (UVA), Madhav Marathe (UVA)
 
 ## The Flu Scenario Modeling Hub Coordination Team    
 
  - Shaun Truelove, Johns Hopkins University
  - Cécile Viboud, NIH Fogarty
  - Justin Lessler, University of North Carolina
- - Katriona Shea, Penn State University
+ - Sara Loo, Johns Hopkins University
+ - Lucie Contamin, University of Pittsburgh
+ - Emily Howerton, Penn State University
  - Rebecca Borchering, Penn State University
  - Claire Smith, Johns Hopkins University
- - Emily Howerton, Penn State University
- - Nick Reich, University of Massachusetts at Amherst
  - Harry Hochheiser, University of Pittsburgh
+ - Katriona Shea, Penn State University
  - Michael Runge, USGS
- - Lucie Contamin, University of Pittsburgh
- - John Levander, University of Pittsburgh
+ - Erica Carcelen, John Hopkins University
+ - Sung-mok Jung, University of North Carolina
  - J Espino, University of Pittsburgh
- - Luke Mullany, Johns Hopkins University
- - Kaitlin Lovett, John Hopkins University
+ - John Levander, University of Pittsburgh
+ 
+ 
