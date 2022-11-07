@@ -131,12 +131,12 @@ The cumulative and peak targets are not required in the “sample” file format
 
 Values in the `target` column must be a character (string) and be one of the following specific targets:
 
-- "N wk ahead inc death"  where N is a number between 1 and 42
-- "N wk ahead cum death"  where N is a number between 1 and 42
-- "N wk ahead inc hosp"  where N is a number between 1 and 42
-- "N wk ahead cum hosp"  where N is a number between 1 and 42
+- "N wk ahead inc death"  where N is a number between 1 and 42 (or 29, depending on the round horizon)
+- "N wk ahead cum death"  where N is a number between 1 and 42 (or 29, depending on the round horizon)
+- "N wk ahead inc hosp"  where N is a number between 1 and 42 (or 29, depending on the round horizon)
+- "N wk ahead cum hosp"  where N is a number between 1 and 42 (or 29, depending on the round horizon)
 - "peak size hosp"  
-- "N wk ahead peak time hosp"  where N is a number between 1 and 42
+- "N wk ahead peak time hosp"  where N is a number between 1 and 42 (or 29, depending on the round horizon)
 
 For week-ahead scenarios, we will use the specification of epidemiological weeks (EWs) defined by the US CDC which run Sunday through Saturday.
 
@@ -175,7 +175,7 @@ Predictions for this target will be evaluated against the weekly number of new h
 
 #### N wk ahead cum hosp
 
-This target is the cumulative number of incident (weekly) number of hospitalized cases predicted by the model during the week that is N weeks after `model_projection_date`.
+This target is the cumulative number of incident (weekly) number of hospitalized cases predicted by the model during the week that is N weeks after `model_projection_date`.  There should be 0 cumulative hospitalization on week 0 of projection.
 
 A week-ahead scenario should represent the cumulative number of hospitalized cases reported up to the Saturday of a given epiweek.
 
