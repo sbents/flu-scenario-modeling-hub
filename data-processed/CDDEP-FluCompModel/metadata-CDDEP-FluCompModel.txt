@@ -4,6 +4,6 @@ model_abbr: CDDEP-FluCompModel
 model_contributors: Fardad Haghpanah <haghpanah@cddep.org>, Eili Klein <klein@cddep.org>, 
 website_url: TBD
 model_version: "1.0"
-methods: age-stratified compartmental model 
+methods: age-stratified compartmental model, MCMC for parameter estimation 
 license: cc-by-4.0
 citation: TBD
