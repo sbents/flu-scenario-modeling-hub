@@ -2783,4 +2783,3 @@ PA,0.950,D-2022-11-13,2022-11-13,29 wk ahead inc death,2023.22,Quantile,lowVE_pe
 PA,0.975,D-2022-11-13,2022-11-13,29 wk ahead inc death,2023.22,Quantile,lowVE_pesImm,30281.95,0-130
 PA,0.990,D-2022-11-13,2022-11-13,29 wk ahead inc death,2023.22,Quantile,lowVE_pesImm,30338.38,0-130
 PA, NA ,D-2022-11-13,2022-11-13,29 wk ahead inc death,2023.22,Point,lowVE_pesImm,29925.55,0-130
-
