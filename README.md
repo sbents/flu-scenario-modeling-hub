@@ -180,7 +180,7 @@ should aggregate to specifications in scenarios
     occurring outside of the hospital. There is no state detail.  In the 3 weeks 
     from October 1-22, 2022, it is estimated that [360 people have died](https://www.cdc.gov/flu/spotlights/2022-2023/early-wave-hospitalizations.htm) due to flu 
     illness or flu-related complications. We have provided 3 historical seasons of 
-    weekly death estimates [for calibration](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/Rd1_datasets/In-season-National-Burden.csv). Further, see [here](https://www.cdc.gov/flu/about/burden/preliminary-in-season-estimates.htm) for cumulative 
+    weekly death estimates [for calibration](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/Rd1_datasets/In-season-National-Burden.csv). We have also provided 5 weeks of [national cumulative death data for the on-going 2022-23 season](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/Rd2_datasets/In-season-National-Deaths.csv), as estimated by the CDC model. Further, see [here](https://www.cdc.gov/flu/about/burden/preliminary-in-season-estimates.htm) for cumulative 
     estimates at the end of the season for a longer time period.
     * No case target
     * No infection target   
@@ -216,7 +216,7 @@ for the US overall (population weighted average)
 **Cross-protection of subtype immunity:** At the discretion of the teams.
 
 **Influenza vaccine coverage data:** Projected week and state-level coverage to use 
-in scenarios A-D are provided [here](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/Rd1_datasets/Age_Specific_Coverage_Flu_RD1_2022_23_Sc_A_B_C_D.csv) for various age groups: 
+in scenarios A-D are provided [here](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/Rd2_datasets/Age_Specific_Coverage_Flu_RD2_2022_23_Sc_A_B_C_D.csv) for various age groups: 
 0-4yr, 5-12yr, 13-17yr, 0-17yr, 18-49yr, 50-64yr, 65+yr. These are based on vaccination 
 rates reported in 2021-22; estimates can be used as is without further adjustment.
 
