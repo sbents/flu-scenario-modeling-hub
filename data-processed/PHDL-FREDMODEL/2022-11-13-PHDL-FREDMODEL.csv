@@ -1,4 +1,4 @@
-location,quantile,scenario_id,model_projection_date,target,target end date,type,scenario_name,value,age_group
+location,quantile,scenario_id,model_projection_date,target,target_end_date,type,scenario_name,value,age_group
 42,0.010,A-2022-11-13,2022-11-13,1 wk ahead inc death,2022-11-19,Quantile,highVE_optImm,0.0,0-130
 42,0.025,A-2022-11-13,2022-11-13,1 wk ahead inc death,2022-11-19,Quantile,highVE_optImm,0.0,0-130
 42,0.050,A-2022-11-13,2022-11-13,1 wk ahead inc death,2022-11-19,Quantile,highVE_optImm,0.0,0-130

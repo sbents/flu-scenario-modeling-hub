@@ -1,4 +1,4 @@
-scenario_id,scenario_name,model_projection_date,target,target end date,sample,location,value,age_group
+scenario_id,scenario_name,model_projection_date,target,target_end_date,sample,location,value,age_group
 A-2022-11-13,highVE_optImm,2022-11-13,1 wk ahead inc death,2022-11-19,1,42,0,0-130
 A-2022-11-13,highVE_optImm,2022-11-13,1 wk ahead inc death,2022-11-19,1,42,0,0-130
 A-2022-11-13,highVE_optImm,2022-11-13,1 wk ahead inc death,2022-11-19,1,42,0,0-130
