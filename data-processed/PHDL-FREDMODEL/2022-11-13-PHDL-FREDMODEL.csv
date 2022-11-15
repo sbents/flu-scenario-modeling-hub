@@ -1,4 +1,13 @@
 location,quantile,scenario_id,model_projection_date,target,target_end_date,type,scenario_name,value,age_group
+42,0.010,A-2022-11-13,2022-11-13,1 wk ahead inc hosp,2022-11-19,quantile,highVE_optImm,0.0,0-130
+42,NA,A-2022-11-13,2022-11-13,1 wk ahead inc hosp,2022-11-19,point,highVE_optImm,0.0,0-130
+42,NA,A-2022-11-13,2022-11-13,peak size hosp,2022-11-19,point,highVE_optImm,16159.05,0-130
+42,0.010,B-2022-11-13,2022-11-13,1 wk ahead inc hosp,2022-11-19,quantile,highVE_pesImm,0.0,0-130
+42,NA,B-2022-11-13,2022-11-13,1 wk ahead inc hosp,2022-11-19,point,highVE_pesImm,0.0,0-130
+42,0.010,C-2022-11-13,2022-11-13,1 wk ahead inc hosp,2022-11-19,quantile,lowVE_optImm,0.0,0-130
+42,NA,C-2022-11-13,2022-11-13,1 wk ahead inc hosp,2022-11-19,point,lowVE_optImm,0.0,0-130
+42,0.010,D-2022-11-13,2022-11-13,1 wk ahead inc hosp,2022-11-19,quantile,lowVE_pesImm,0.0,0-130
+42,NA,D-2022-11-13,2022-11-13,1 wk ahead inc hosp,2022-11-19,point,lowVE_pesImm,0.0,0-130
 42,0.010,A-2022-11-13,2022-11-13,2 wk ahead inc hosp,2022-11-26,quantile,highVE_optImm,15.95,0-130
 42,0.025,A-2022-11-13,2022-11-13,2 wk ahead inc hosp,2022-11-26,quantile,highVE_optImm,17.375,0-130
 42,0.050,A-2022-11-13,2022-11-13,2 wk ahead inc hosp,2022-11-26,quantile,highVE_optImm,19.75,0-130
