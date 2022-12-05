@@ -52,7 +52,7 @@ prior immunity to influenza (second dimension) over a 26-week
 period (Dec 4, 2022 - June 3, 2023). We follow the usual 2 * 2 
 table structure.
 
-<img src= "flu_round3.png">
+<img src= "https://raw.githubusercontent.com/midas-network/flu-scenario-modeling-hub/main/flu_round3.png">
 
 
 In all scenarios, we assume that vaccine uptake will proceed at the same pace 

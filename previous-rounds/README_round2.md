@@ -53,7 +53,7 @@ with the impact of the COVID-19 pandemic on prior immunity to influenza (second
 dimension) over a 29-week period (Nov 13, 2022 - June 3, 2023). We follow the 
 usual 2 * 2 table structure. 
 
-<img src= "flu_round2.png">
+<img src= "https://raw.githubusercontent.com/midas-network/flu-scenario-modeling-hub/main/previous-rounds/flu_round2.png">
 
 
 In all scenarios, we assume that vaccine uptake will proceed at the same pace 
