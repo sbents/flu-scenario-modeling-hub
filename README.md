@@ -436,6 +436,14 @@ Machi (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA)
 *   [*University of Virginia Biocomplexity Institute — FluXSim*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/UVA-FluXSim/metadata-UVA-FluXSim.txt)
     *   Srini Venkatramanan, Aniruddha Adiga, Przemek Porebski, Brian Klahn, 
 Benjamin Hurt,  Bryan Lewis (UVA), Madhav Marathe (UVA)
+*   [*Fogarty International Center, National Institutes of Health (NIH) — FluD*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/NIH-FluD/metadata-NIH-FluD.txt)
+    *   Samantha Bents (NIH), Cécile Viboud (NIH)
+*   [*Public Health Dynamics Laboratory — FREDMODEL*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/PHDL-FREDMODEL/metadata-PHDL-FREDMODEL.txt)
+    *   Mary G Krauland
+*   [*Predictive Science — M1*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/PSI-M1/metadata-PSI-M1.txt)
+    *   Ben-Nun M (Predictive Science), Turtle J (Predictive Science), Riley P 
+    (Predictive Science)
+
 
 ## The Flu Scenario Modeling Hub Coordination Team    
 
