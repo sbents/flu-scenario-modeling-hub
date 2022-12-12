@@ -1,5 +1,5 @@
 # Summary of Results
-Our result show vaccine efficacy has an insignificant impact on hospitalizations and deaths, when compared to prior immunity. That is, scenarios A (highVE_optImm) and C (lowVE_optImm) result in relatively similar rates, so do scenarios B (highVE_pesImm) and D (lowVE_pesImm). In addition, scenarios A and C resulted in lower rates than B and D.
+Our results show vaccine efficacy has an insignificant impact on hospitalizations and deaths, when compared to prior immunity. That is, scenarios A (highVE_optImm) and C (lowVE_optImm) result in relatively similar rates, so do scenarios B (highVE_pesImm) and D (lowVE_pesImm). In addition, scenarios A and C resulted in lower rates than B and D.
 
 The timing of the peak hospitalization slightly varies across different scenarios and age groups. For scenarios A and C, the peak is in December in all three age groups, while for scenarios B and D, the peak is in December for the 65+ age group, and it might fall in January for 0-17 and 18-64 age groups.
 
