@@ -349,25 +349,9 @@ for technical submission requirements. Groups can submit their contributions as
 often as they want; the date of when a model projection was made (projection 
 date) is recorded in the model submission file.   
 
-### Model projection dates
-Model projections will have an associated `model_projection_date` that 
-corresponds to the day the projection was made.    
-
-For week-ahead model projections with `model_projection_date` of Sunday or 
-Monday of EW12, a 1 week ahead projection corresponds to EW12 and should have 
-`target_end_date` of the Saturday of EW12. For week-ahead projections with 
-`model_projection_date` of Tuesday through Saturday of EW12, a 1 week ahead 
-projection corresponds to EW13 and should have `target_end_date` of the 
-Saturday of EW13. A week-ahead projection should represent the total number of 
-incident deaths or hospitalizations within a given epiweek (from Sunday through 
-Saturday, inclusive) or the cumulative number of deaths reported on the 
-Saturday of a given epiweek. Model projection dates in the Flu Scenario 
-Modeling Hub are equivalent to the forecast dates in the 
-[COVID-19 Forecast Hub](https://covid19forecasthub.org/).
-
 ### Gold standard data
 
-*to be addded*
+*to be added*
 
 ### Locations
 Model projections may be submitted for any state in the US and the US at the 
