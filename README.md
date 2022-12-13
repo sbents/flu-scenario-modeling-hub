@@ -2,7 +2,7 @@
 
 # Flu Scenario Modeling Hub
 
-Last updated: 11-4-2022 for **Round 2 Scenarios**.
+Last updated: 12-5-2022 for **Round 3 Scenarios**.
 
 ## Rationale    
 
@@ -43,17 +43,16 @@ required file formats can be found
 
 </br>
 
-## Round 2 Scenarios     
+## Round 3 Scenarios     
 
-Round 2 is an update of Round 1 that will include early season calibration data 
-on transmission and subtype circulation. This round is intended to capture what 
-is shaping up as a particularly early influenza season in the southeastern states. 
-We will consider the interaction of vaccination effectiveness (first dimension) 
-with the impact of the COVID-19 pandemic on prior immunity to influenza (second 
-dimension) over a 29-week period (Nov 13, 2022 - June 3, 2023). We follow the 
-usual 2 * 2 table structure. 
+Round 3 is a direct update of Round 2 with 3 extra weeks of data. 
+We will consider the interaction of vaccination effectiveness 
+(first dimension) with the impact of the COVID-19 pandemic on 
+prior immunity to influenza (second dimension) over a 26-week 
+period (Dec 4, 2022 - June 3, 2023). We follow the usual 2 * 2 
+table structure.
 
-<img src= "flu_round2.png">
+<img src= "https://raw.githubusercontent.com/midas-network/flu-scenario-modeling-hub/main/flu_round3.png">
 
 
 In all scenarios, we assume that vaccine uptake will proceed at the same pace 
@@ -161,14 +160,14 @@ should aggregate to specifications in scenarios
 
 ### **Targets and Time Horizon:**
 
-**Projection time horizon:** We consider a **29-week projection period:**
+**Projection time horizon:** We consider a **26-week projection period:**
 
-*    *November 13, 2022* to *June 3, 2023*
+*    *December 4, 2022* to *June 3, 2023*
 
 **Targets:** 
 
 *   **Weekly target**
-    *   Weekly state-level incident and cumulative hospitalizations, based on 
+    *   Weekly <u>reported</u> state-level incident and cumulative hospitalizations, based on 
     HHS COVID and flu [reporting system](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh). This dataset is updated daily and covers 2020-2022. Weekly 
     hospitalizations should be based on the “previous_day_admission_influenza_confirmed” 
     variable, without any adjustment for reporting (=raw data from HHS dataset 
@@ -177,11 +176,12 @@ should aggregate to specifications in scenarios
     real-time model estimates updated weekly during the influenza season.  The model 
     relies on influenza deaths reported in the hospitals via the flusurvnet system, 
     adjusted for under testing of flu in the hospital and the proportion of deaths 
-    occurring outside of the hospital. There is no state detail.  In the 3 weeks 
-    from October 1-22, 2022, it is estimated that [360 people have died](https://www.cdc.gov/flu/spotlights/2022-2023/early-wave-hospitalizations.htm) due to flu 
-    illness or flu-related complications. We have provided 3 historical seasons of 
-    weekly death estimates [for calibration](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/Rd1_datasets/In-season-National-Burden.csv). We have also provided 5 weeks of [national cumulative death data for the on-going 2022-23 season](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/Rd2_datasets/In-season-National-Deaths.csv), as estimated by the CDC model. Further, see [here](https://www.cdc.gov/flu/about/burden/preliminary-in-season-estimates.htm) for cumulative 
-    estimates at the end of the season for a longer time period.
+    occurring outside of the hospital. There is no state detail. Between October 
+    1-November 26, 2022, it is estimated that 4,500 – 13,000 deaths were due to flu 
+    illness or flu-related complications based on the CDC model. We have provided 3 
+    historical seasons of weekly death estimates [for calibration](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/Rd1_datasets/In-season-National-Burden.csv). Further, see here for 
+    real-time cumulative estimates, and summary estimates for past seasons. A file of 
+    weekly cumulative estimates for the 2022-23 season is posted [here](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/CumulativeDeath/In_season_CDC_burden_estimates_deaths.csv).
     * No case target
     * No infection target   
     * All targets should be numbers of individuals, rather than rates.
@@ -195,12 +195,12 @@ should aggregate to specifications in scenarios
     weekly outcomes on the last week of projections).
 
 All cumulative outcomes start at 0 at the start of projections, on 
-Nov 13, 2022. This is similar to round 1. To facilitate comparison between our 
+Dec 4, 2022. This is similar to round 1 and 2. To facilitate comparison between our 
 cumulative projections and CDC’s burden estimates, the coordination team will add 
-HHS hospitalizations and CDC’s death estimates for the 6 weeks between Oct 2 and 
-Nov 12 (weeks 40-45 of 2022) to the teams’ cumulative projections. This will be 
-done as post-processing and these “full season estimates” will be displayed on 
-the website and communicated to the public.
+CDC’s death estimates for the 9 weeks between Oct 2 and Dec 4 (weeks 40-48 of 2022)
+to the teams’ cumulative projections. This will be done as post-processing and 
+these “full season estimates” will be displayed on the website and communicated 
+to the public.
 
 
 **State-level variability**
@@ -247,15 +247,15 @@ abstract.**
 
 | Scenario | Scenario name for submission file | Scenario ID for submission file |
 | ---------------------------------------------- |:---------------------------------:|:-------------------------------:|
-| Scenario A. High vaccine effectiveness, optimistic immunity      | highVE_optImm  | A-2022-11-13 |
-| Scenario B. High vaccine effectiveness, pessimistic immunity     | highVE_pesImm  | B-2022-11-13 |
-| Scenario C. Low vaccine effectiveness, Optimistic immunity       | lowVE_optImm   | C-2022-11-13 |
-| Scenario D. Low vaccine effectiveness, pessimistic immunity      | lowVE_pesImm   | D-2022-11-13 | 
-*   **Due date**: November 15, 2022 
-*   **End date for fitting data**: November 12, 2022 (no later than November 5) 
-*   **Start date for scenarios**: November 13, 2022 (first date of simulated transmission/outcomes)
-*   **Simulation end date:**  June 3, 2023 (29-week horizon)
-*   We aim to release results before the end of November 2022
+| Scenario A. High vaccine effectiveness, optimistic immunity      | highVE_optImm  | A-2022-12-04 |
+| Scenario B. High vaccine effectiveness, pessimistic immunity     | highVE_pesImm  | B-2022-12-04 |
+| Scenario C. Low vaccine effectiveness, Optimistic immunity       | lowVE_optImm   | C-2022-12-04 |
+| Scenario D. Low vaccine effectiveness, pessimistic immunity      | lowVE_pesImm   | D-2022-12-04 | 
+*   **Due date**: December 12, 2022 
+*   **End date for fitting data**: December 3, 2022 
+*   **Start date for scenarios**: December 4, 2022 (first date of simulated transmission/outcomes)
+*   **Simulation end date:**  June 3, 2023 (26-week horizon)
+*   We aim to release results by mid December 2022
 
 
 **Other submission requirements**
@@ -268,7 +268,7 @@ abstract.**
     dated by the last day of the week.
     *  **Weekly Targets** (subset of: hospitalizations, deaths)
         *    Weekly incident 
-        *    Weekly cumulative since start of season (November 13, 2022)
+        *    Weekly cumulative since start of season (December 4, 2022)
     *  **Summary Targets** (hospitalizations)
         *    Peak size
         *    Peak timing 
