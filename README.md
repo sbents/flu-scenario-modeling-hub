@@ -34,7 +34,7 @@ about design. A major output of the projection hub is ensemble estimates of
 epidemic outcomes (e.g., infection, hospitalizations, and deaths), for different
 time points, intervention scenarios, and US jurisdictions.
 
-Those interested to participate should email scenariohub@midasnetwork.us .
+Those interested to participate, please read the README file and email us at scenariohub@midasnetwork.us .
 
 Model projections should be submitted via pull request to the data-processed 
 folder of this GitHub repository. Technical instructions for submission and 
@@ -245,7 +245,7 @@ abstract.**
 
 ## Submission Information    
 
-| Scenario | Scenario name for submission file | Scenario ID for submission file |
+| Scenario | Scenario name for submission file (`scenario_name`) | Scenario ID for submission file (`scenario_id`) |
 | ---------------------------------------------- |:---------------------------------:|:-------------------------------:|
 | Scenario A. High vaccine effectiveness, optimistic immunity      | highVE_optImm  | A-2022-12-04 |
 | Scenario B. High vaccine effectiveness, pessimistic immunity     | highVE_pesImm  | B-2022-12-04 |
@@ -351,21 +351,9 @@ date) is recorded in the model submission file.
 
 ### Gold standard data
 
-*to be added*
+For Flu hospitalizations, we use the [HHS COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/qqte-vkut). The target to be projected is confirmed influenza hospital admissions, reported as `"previous_day_admission_influenza_confirmed"`. Therefore, before aggregating to the weekly values, the gold standard or “truth” data will shift the values in the date column one day earlier so that the date aligns with the date of admission. As an example, if 17 confirmed influenza hospital admissions were reported in the `"previous_day_admission_influenza_confirmed"` field in a row where the `date field` was 2021-10-30, then the “truth” dataset would assign those 17 hospital admissions to a date of 2021-10-29. These cases would then be counted towards the weekly total computed for EW43, which runs from 2021-10-24 through 2021-10-30.
 
-### Locations
-Model projections may be submitted for any state in the US and the US at the 
-national level.
-
-### Probabilistic model projections
-Model projections will be represented using quantiles of predictive 
-distributions. Similar to the 
-[COVID-19 Forecast hub](https://covid19forecasthub.org/), we encourage all 
-groups to make available the following 25 quantiles for each distribution: 
-`c(0, 0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99, 1)`. One goal of 
-this effort is to create probabilistic ensemble scenarios, and having 
-high-resolution component distributions will provide data to create better 
-ensembles.
+For Flu death, we use weekly estimates of cumulative influenza-related deaths based on CDC multiplier model, the data are available in the [flu-scenario-modeling-resources](https://github.com/midas-network/flu-scenario-modeling-hub_resources) GitHub repository in the [CumulativeDeath](https://github.com/midas-network/flu-scenario-modeling-hub_resources/tree/main/CumulativeDeath) folder. The model is based on in-hospital deaths reported to flusurvnet and accounts for lack of influenza testing in the hospital, and deaths occurring outside of the hospital system. Estimates provided in this file are the 2.5% and 97.5% quantiles (95% uncertainty interval). 
 
 ## Ensemble model
 We aim to combine model projections into an ensemble.
