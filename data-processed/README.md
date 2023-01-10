@@ -126,6 +126,7 @@ columns (in any order):
     - `type` 
     - `quantile` 
     - `value`
+    - `age_group`
 
 - For file format containing **sample** information, the output file should
   contains eight columns:
@@ -137,6 +138,7 @@ columns (in any order):
     - `location`
     - `sample` 
     - `value`
+    - `age_group`
 
 No additional columns are allowed.
 
