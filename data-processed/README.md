@@ -3,8 +3,8 @@
 This page is intended to provide teams with all the information they
 need to submit scenarios.  
 
-All scenarios should be submitted directly to the [data-processed/]
-(./) folder. Data in this directory should be added to the repository
+All scenarios should be submitted directly to the [data-processed/](./) 
+folder. Data in this directory should be added to the repository
 through a pull request. 
 
 Due to file size limitation, the file can be submitted in a `.zip` or
@@ -51,7 +51,7 @@ where
 - `team` is the teamname and 
 - `model` is the name of your model. 
     
-The metadata file must follow the [documented description](https://github.com/midas-network/flu-scenario-modeling-hub/blob/master/data-processed/METADATA.md). 
+The metadata file must follow the [documented description](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/METADATA.md). 
 An example [hypothetical metadata file](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt) 
 has been posted in the `data-processed` directory. 
 
