@@ -437,7 +437,7 @@ To ensure proper data formatting, pull requests for new data or updates in
 data-processed/ will be automatically validated
 
 When a pull request is submitted, the data are validated by running the
-scripts in [validation.R](./code/validation/validation.R). The intent for
+scripts in [validation.R](../code/validation/validation.R). The intent for
 these tests are to validate the requirements above and all checks are 
 specifically enumerated [on the wiki](https://github.com/midas-network/flu-scenario-modeling-hub/wiki/Scenario-File-Checks).
 
