@@ -24,8 +24,9 @@ unreasonable parameters (hyper transmissible and extremely low severity), and si
 scenario D to all scenarios.  This resulted in a poor match to the data for scenario A, but very reasonable forward 
 projections.  
 
-To calibrate the model we fit the reproduction number and infection-hospitalization rate to the data to-date.  
-We then applied uncertainty to each of the parameters based on previous seasonal-influenza modeling activities.
+To calibrate the model we fit the reproduction number, infection-hospitalization rate, and initial number of infections
+to the data to-date.  We then applied uncertainty to each of the parameters based on previous seasonal-influenza 
+modeling activities.
 
 # Model Assumptions
 ## Immunity assumptions
@@ -45,7 +46,7 @@ Only one strain.
 ### Strain(s) specifications (immune escape, transmissibility)
 Single strain. 
 Generation time = 2.5 (days)
-Fit parameters: reproduction number, infection-hospitalization rate
+Fit parameters: reproduction number, infection-hospitalization rate, initial number of infections
 
 ### Are interactions between strains/subtypes implicitly modeled?
 No
@@ -61,7 +62,16 @@ Single strain with a fit distribution of parameters.
 None
 
 ## Age Group Variability
-No age variability.
+### No of age groups
+1 - Population treated as a single age group.  
+
+### Age-stratification differences (susceptibility, vaccine effectiveness, waning)
+None
+
+## State-level Variability
+### State-stratification details (prior immunity, vaccine coverage)
+States only varied as a result of model fit parameters and provided vaccine uptake time-series (and of course 
+population size).
 
 ## Vaccine Effectiveness
 ### VE against infection (by age, if relevant)
@@ -71,7 +81,7 @@ VE against infection is set as one half of VE against hospitalization.
 Mortality not considered.
 
 ### VE against transmission (by age, if relevant)
-None
+We assume that VE only affects susceptibility, not infectiousness.
 
 ## Other Model Assumptions
 We assume that the transmission parameter remains constant throughout the season
