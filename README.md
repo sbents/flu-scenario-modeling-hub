@@ -382,12 +382,16 @@ contact Katriona Shea at k-shea@psu.edu.
 *   [*Center For Disease Dynamics, Economics & Policy — FluCompModel*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/CDDEP-FluCompModel/metadata-CDDEP-FluCompModel.txt)
     *   Fardad Haghpanah, Eili Klein
 *   [*Johns Hopkins ID Dynamics — COVID Scenario Pipeline*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
-    *   Joseph C. Lemaitre (EPFL), Joshua Kaminsky (Johns Hopkins Infectious 
-Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious Disease 
-Dynamics), Elizabeth C. Lee (Johns Hopkins Infectious Disease Dynamics), Justin 
-Lessler (Johns Hopkins Infectious Disease Dynamics), Claire P. Smith (Johns 
-Hopkins Infectious Disease Dynamics), Allison Hill (Johns Hopkins Infectious 
-Disease Dynamics)
+    *   Joseph C. Lemaitre (UNC), Joshua Kaminsky (Johns Hopkins 
+        Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins 
+        Infectious Disease Dynamics), Sara Loo (Johns Hopkins Infectious 
+        Disease Dynamics), Clif McKee (Johns Hopkins Infectious Disease 
+        Dynamics), Alison Hill (Johns Hopkins Infectious Disease Dynamics), 
+        Sung-mok Jung (UNC), Erica Carcelen (Johns Hopkins Infectious 
+        Disease Dynamics), Koji Sato (Johns Hopkins Infectious Disease 
+        Dynamics), Elizabeth C. Lee (Johns Hopkins Infectious Disease 
+        Dynamics), Justin Lessler (UNC), Shaun Truelove (Johns Hopkins 
+        Infectious Disease Dynamics)
 *   [*Northeastern University MOBS Lab — GLEAM FLU*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MOBS_NEU-GLEAM_FLU/metadata-MOBS_NEU-GLEAM_FLU.txt)
     *   Matteo Chinazzi (Northeastern University, Boston, MA), Jessica T. Davis 
 (Northeastern University, Boston, MA), Kunpeng Mu (Northeastern University, Boston, 
@@ -425,14 +429,22 @@ Benjamin Hurt,  Bryan Lewis (UVA), Madhav Marathe (UVA)
  - Sara Loo, Johns Hopkins University
  - Lucie Contamin, University of Pittsburgh
  - Emily Howerton, Penn State University
- - Rebecca Borchering, Penn State University
  - Claire Smith, Johns Hopkins University
  - Harry Hochheiser, University of Pittsburgh
  - Katriona Shea, Penn State University
  - Michael Runge, USGS
  - Erica Carcelen, John Hopkins University
  - Sung-mok Jung, University of North Carolina
- - J Espino, University of Pittsburgh
+ - Jessi Espino, University of Pittsburgh
  - John Levander, University of Pittsburgh
+ - Katie Yan, Penn State University
  
- 
+### Past member
+
+-   Wilbert Van Panhuis, University of Pittsburgh
+-   Jessica Kerr, University of Pittsburgh
+-   Luke Mullany, Johns Hopkins University
+-   Kaitlin Lovett, John Hopkins University
+-   Michelle Qin, Harvard University
+-   Tiffany Bogich, Penn State University
+-   Rebecca Borchering, Penn State University
