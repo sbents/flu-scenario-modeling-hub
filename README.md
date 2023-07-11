@@ -404,8 +404,9 @@ MA), Alessandro Vespignani (Northeastern University, Boston, MA)
     *   Ajitesh Srivastava, Majd Al Aawar
 *   [*University of Texas — ImmunoSEIRS*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/UT-ImmunoSEIRS/metadata-UT-ImmunoSEIRS.txt)
     *   Kaiming Bi (The University of Texas at Austin), Anass Bouchnita (The 
-University of Texas at El Paso), Spencer J. Fox (The University of Georgia), 
-Lauren Ancel Meyers (The University of Texas at Austin), UT COVID-19 Modeling Consortium.
+University of Texas at El Paso), Shraddha R Bandekar (University of Texas at Austin), 
+Spencer J. Fox (The University of Georgia), Lauren Ancel Meyers (The University of 
+Texas at Austin), UT COVID-19 Modeling Consortium.
 *   [*University of Virginia Biocomplexity Institute  — EpiHiper*](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
     *   Jiangzhuo Chen (UVA), Stefan Hoops (UVA), Parantapa Bhattacharya (UVA), Dustin 
 Machi (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA)
