@@ -7,20 +7,24 @@ All scenarios should be submitted directly to the [data-processed/](./)
 folder. Data in this directory should be added to the repository
 through a pull request. 
 
-Due to file size limitation, the file can be submitted in a `.zip` or
-`.gz` format with the same name as the `.csv` file provided. 
+Due to file size limitation, the file can be submitted in a in a `.parquet` or 
+`.gz.parquet`.
 
 All submissions will be automatically validated upon submission, for
 more information please consult the validation wiki page. 
 
+The submission file format has been updated starting round 4 (September 2024).  For 
+information on previous file format please refer to past version of this 
+README file.
+
+----
+
 ## Example
 
-See [this file](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MyTeam-MyModel/2022-08-14_MyTeam-MyModel.csv)
-and [this metadata file](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt)
-for an illustration of part of a (hypothetical) submission files. An
-example of the “sample” format file submission is also available 
-[here](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MyTeam-MyModel/2022-08-14-MyTeam-MyModel-sample.csv).
+See this file
+for an illustration of part of a (hypothetical) submission files. 
 
+---
 
 ## Subdirectory
 
@@ -38,7 +42,9 @@ Both team and model should be less than 15 characters, and not include
 hyphens nor spaces.
 
 Within each subdirectory, there should be a metadata file, a license
-file (optional), and a set of scenarios. 
+file (optional), and a set of scenarios.
+
+----
 
 ## Metadata 
 
@@ -55,6 +61,8 @@ The metadata file must follow the [documented description](https://github.com/mi
 An example [hypothetical metadata file](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt) 
 has been posted in the `data-processed` directory. 
 
+---
+
 ## License (optional)
 
 License information for data sharing and reuse is requested in the
@@ -64,6 +72,7 @@ a license file named
 
     LICENSE.txt
 
+----
 
 ## Date/Epiweek information
 
@@ -76,13 +85,14 @@ and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek
 for R and [pymmwr](https://pypi.org/project/pymmwr/) and 
 [epiweeks](https://pypi.org/project/epiweeks/) for python.
 
+---
 
 ## Model Results
 
 Each model results file within the subdirectory should have the following 
 name
 
-    YYYY-MM-DD-team-model.csv
+    YYYY-MM-DD-team-model.parquet
     
 where
 
@@ -92,8 +102,29 @@ where
 - `team` is the teamname, and
 - `model` is the name of your model.
 
+"parquet" files format from Apache is "is an open source, column-oriented data
+file format designed for efficient data storage and retrieval". Please find more
+information on the [parquet.apache.com](https://parquet.apache.org/) website.
 
-TThe date YYYY-MM-DD should correspond to the start date for scenarios
+The "arrow" library can be used to read/write the files in 
+[Python](https://arrow.apache.org/docs/python/parquet.html) and 
+[R](https://arrow.apache.org/docs/r/index.html).
+Other tools are also accessible, for example [parquet-tools](https://github.com/hangxie/parquet-tools)
+
+For example, in R:
+```
+# To write "parquet" file format:
+filename <- ”path/YYYY-MM-DD-team_model.parquet”
+arrow::write_parquet(df, filename)
+# with "gz compression"
+filename <- ”path/YYYY-MM-DD-team_model.gz.parquet”
+arrow::write_parquet(df, filename, compression = "gzip", compression_level = 9)
+
+# To read "parquet" file format:
+arrow::read_parquet(filename)
+```
+
+The date YYYY-MM-DD should correspond to the start date for scenarios
 projection ("first date of simulated transmission/outcomes" as noted in the
 scenario description on the main 
 [README, Submission Information](https://github.com/midas-network/flu-scenario-modeling-hub#submission-information)).
@@ -102,65 +133,42 @@ The `team` and `model` in this file must match the `team` and `model` in the
 directory this file is in. Both `team` and `model` should be less than 15 
 characters, alpha-numeric and underscores only, with no spaces or hyphens.
 
-For optional addtional format, the filename of the model results is
-different:
-- For `"sample"` file format (individual runs), the file should be named:
-  `“YYYY-MM-DD-team-model-sample.csv”`
+If the size of the file is larger than 100MB, it should be submitted in a 
+`.gz.parquet` format. 
 
-If the size of the file is larger than 100MB, it can be submitted in a `.zip`
-or `.gz` format. 
+---
 
 ## Model results file format
 
 The file must be a comma-separated value (csv) file with the following 
 columns (in any order):
 
-- For file format containing **quantiles** information, the output file should
-  contains nine columns:
-    - `model_projection_date`
-    - `scenario_name` 
-    - `scenario_id`
-    - `target`
-    - `target_end_date`
-    - `location`
-    - `type` 
-    - `quantile` 
-    - `value`
-    - `age_group`
-
-- For file format containing **sample** information, the output file should
-  contains eight columns:
-    - `model_projection_date`
-    - `scenario_name` 
-    - `scenario_id`
-    - `target`
-    - `target_end_date`
-    - `location`
-    - `sample` 
-    - `value`
-    - `age_group`
+The output file should contains eight columns:
+- `origin_date`
+- `scenario_id`
+- `target`
+- `horizon`
+- `location`
+- `age_group`
+- `output_type` 
+- `output_type_id` 
+- `value`
 
 No additional columns are allowed.
 
-Each row in the file is either a point or quantile scenario for a location on 
-a particular date for a particular target.
+Each row in the file is a specific type for a scenario for a location on
+a particular date for a particular target. 
 
 
-### `model_projection_date`
+### `origin_date`
 
-Values in the `model_projection_date` column must be a date in the format
+Values in the `origin_date` column must be a date in the format
 
     YYYY-MM-DD
     
-Model projections will have an associated `model_projection_date` to the start
-date for scenarios (first date of simulated transmission/outcomes).
-The "model_projection_date" and date in the filename should correspond.
-
-### `scenario_name`
-
-The standard scenario names should be used as given in the scenario 
-description in the [main Readme](https://github.com/midas-network/flu-scenario-modeling-hub). 
-Scenario names only include characters and no spaces, e.g., `lowVac_optImm`.
+The `origin_date` is the start date for scenarios (first date of 
+simulated transmission/outcomes).
+The "origin_date" and date in the filename should correspond.
 
 
 ### `scenario_id`
@@ -173,36 +181,54 @@ Scenario id's include a captitalized letter and date as YYYY-MM-DD, e.g.,
 
 ### `target`
 
-The requested targets are:
+The submission can contain multiple output type information: 
+- 100 representative trajectories from the model simulations. We will 
+  call this format "sample" output type. For more information, please
+  consult the 
+  [sample](https://github.com/midas-network/flu-scenario-modeling-hub/tree/master/data-processed#sample) 
+  section.
+- A set of quantiles value for all the tarquets (except peak timing).
+  We will call this format "quantile" output type. For more information, 
+  please consult the 
+  [quantile](https://github.com/midas-network/flu-scenario-modeling-hub/tree/master/data-processed#quantile-and-mean) 
+  section. 
+- A cumulative distribution function for the peak timing target. 
+  We will call this format "cdf" output type. For more information, 
+  please consult the 
+  [quantile](https://github.com/midas-network/flu-scenario-modeling-hub/tree/master/data-processed#quantile-and-mean) 
+  section. 
+
+The requested targets are (for "sample" type output):
 - weekly incident deaths (US level only)
-- weekly cumulative deaths (US level only)
 - weekly incident hospitalizations (US + State level)
-- weekly cumulative hospitalizations (US + State level)
-- peak size hospitalizations (US + State level)
-- weekly peak timing hospitalizations (US + State level)
 
-Values in the `target` column must be a character (string) and be one of 
-the following specific targets:
+Optional target (for "quantile" or "cdf" type output):
+- quantile:
+    - weekly cumulative deaths (US level only)
+    - weekly cumulative hospitalizations (US + State level)
+    - weekly incident deaths (US level only)
+    - weekly incident hospitalizations (US + State level)
+    - peak size hospitalizations (US + State level)
+- cdf:
+    - weekly peak timing hospitalizations (US + State level)
 
-- "N wk ahead inc death"  where N is a number between 1 and 42 (or 29 or 26, depending on the round)
-- "N wk ahead cum death"  where N is a number between 1 and 42 (or 29 or 26, depending on the round)
-- "N wk ahead inc hosp"  where N is a number between 1 and 42 (or 29 or 26, depending on the round)
-- "N wk ahead cum hosp"  where N is a number between 1 and 42 (or 29 or 26, depending on the round)
-- "peak size hosp"  
-- "N wk ahead peak time hosp"  where N is a number between 1 and 42 (or 29 or 26, depending on the round)
+For all the targets, the age group `"0-130"` is required, all the incident and 
+cumulative targets can also include other age group information (optional).
 
-<b>For the optional "sample" file format:</b> Only the two incident targets are requested: 
-- weekly incident deaths
-- weekly incident hospitalizations
-
-For week-ahead scenarios, we will use the specification of epidemiological weeks (EWs) defined by the US CDC which run Sunday through Saturday.
+Values in the `target` column must be one of the following character strings:
+- "inc death"  
+- "inc hosp"
+- "cum death"  
+- "cum hosp"
+- "peak size hosp"
+- "peak time hosp"
 
 
-#### N wk ahead inc death
+#### inc death
 
 This target is the national incident (weekly) number of deaths predicted
 by the model during the week that is N weeks after
-`model_projection_date`. There should not be any death projections at
+`origin_date`. There should not be any death projections at
 the state level. 
 
 A week-ahead scenario should represent the total number of new deaths
@@ -217,10 +243,26 @@ published in real time starting a few weeks into the influenza
 season. 
 
 
-#### N wk ahead cum death
+#### inc hosp
+
+This target is the incident (weekly) number of hospitalized cases
+predicted by the model during the week that is N weeks after
+`origin_date`.
+
+A week-ahead scenario should represent the total number of new
+hospitalized cases reported during a given epiweek (from Sunday through
+Saturday, inclusive).
+
+Predictions for this target will be evaluated against the weekly number
+of new hospitalized cases, as recorded by the U.S. Department of
+Health & Human Services Flu and COVID-19 system (derived from the prior
+day influenza admissions variable). 
+
+
+#### cum death
 
 This target is the national cumulative number of deaths predicted by the
-model up to and including N weeks after `model_projection_date`. There
+model up to and including N weeks after `origin_date`. There
 should be 0 cumulative deaths on week 0 of projection.
 
 A week-ahead scenario should represent the cumulative number of deaths
@@ -233,23 +275,7 @@ underreporting and out-of-hospital mortality.These estimates are
 published in real time starting a few weeks into the influenza season.
 
 
-#### N wk ahead inc hosp
-
-This target is the incident (weekly) number of hospitalized cases
-predicted by the model during the week that is N weeks after
-`model_projection_date`.
-
-A week-ahead scenario should represent the total number of new
-hospitalized cases reported during a given epiweek (from Sunday through
-Saturday, inclusive).
-
-Predictions for this target will be evaluated against the weekly number
-of new hospitalized cases, as recorded by the U.S. Department of
-Health & Human Services Flu and COVID-19 system (derived from the prior
-day influenza admissions variable). 
-
-
-#### N wk ahead cum hosp
+#### cum hosp
 
 This target is the cumulative number of incident (weekly) number of
 hospitalized cases predicted by the model during the week that is N
@@ -266,20 +292,22 @@ COVID-19 system (derived from the prior day influenza admissions
 variable)
 
 
-#### N wk ahead peak time hosp
+#### peak time hosp
 
 This target is the cumulative probability of the incident
 hospitalization peak occurring before or during the week that is N
-weeks after `model_projection_date`. For instance "22 wk ahead peak
-time hosp" is the probability that hospitalizations peak within the
-first 22 weeks of the projection period. This cumulative probability
-will be 1 on the last week of the projection period.
+weeks after `orgin_date`. For instance "peak
+time hosp" on the 22nd epiweek of projection is the probability that 
+hospitalizations peak within the first 22 weeks of the projection 
+period. This cumulative probability will be 1 on the last week of the 
+projection period. A probability of 1 in the first week of the projection 
+period could mean either future projections are not expected to 
+exceed a prior peak or projections expect the peak will occur in the 
+first week.
 
-Further, we do not expect a full distribution of quantiles, only “point”
-values for this target.
 
 Predictions for this target will be evaluated against the week of the
-peak number of hospitalized cases in 2022-23, as recorded by the U.S.
+peak number of hospitalized cases, as recorded by the U.S.
 Department of Health & Human Services Flu and COVID-19 system
 (derived from the prior day influenza admissions variable).
 
@@ -289,60 +317,32 @@ This target is the magnitude of the peak of weekly incident
 hospitalizations in the model, when considering the full projection
 period. 
 
-Further, we do not expect a full time series, the `target_end_date`
+Further, we do not expect a full time series, the `horizon`
 column associated with this value should be set to `NA`.
 
 Predictions for this target will be evaluated against the size of the
-peak number of weekly hospitalized cases in 2022-23, as recorded by the
+peak number of weekly hospitalized cases, as recorded by the
 U.S. Department of Health & Human Services Flu and COVID-19 system
 (derived from the prior day influenza admissions variable).
 
 
-### `target_end_date`
+### `horizon`
 
-Values in the `target_end_date` column must be a date in the format
+Values in the `horizon` column must be a integer (N) between 1 and last week 
+horion value representing the associated target value during the N weeks
+after `origin_date`. 
 
-```
-YYYY-MM-DD
-``` 
+For example, between 1 and 39 for Round 4 ("**Simulation end date:** 
+ June 1, 2024 (39-week horizon)") and in the following example table,
+the first row represent the number of incident death in the US, for the 1st 
+epiweek (epiweek ending on 2023-09-09) after 2023-09-03 for the scenario 
+A-2023-08-14. 
 
-This is the date for the scenario `target`.
+|origin_date|scenario_id|location|target|age_group|horizon|...|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|2023-09-03|A-2023-08-14|US|inc death|0-130|1|...|
+|||||||
 
-The target and target_end_date columns are associated. For "# wk" targets,
-`target_end_date` will be the Saturday at the end of the week time period. A
-week-ahead projection should represent the total number of incident deaths or
-hospitalizations within a given epiweek (from Sunday through Saturday,
-inclusive) or the cumulative number of deaths reported on the Saturday of a
-given epiweek. Model projection dates in the Flu Scenario Modeling Hub
-are equivelent to the model projection dates in the 
-[COVID-19 Scenario Modeling Hub](covid19scenariomodelinghub.org/).
-
-It can be calculated as:
-
-- in days: `model_projection_date` - `1` (as model_projection_date is the
-start (first) day of projection) + `(N * 7)` days (N being the number of
-week ahead in the associated target, e.g `"1 wk ahead"`, `"2 wk ahead"`)
-to have it in days.
-
-- in epiweek: `model_projection_date` epiweek - `1` + `N`. In this case the last day
-(Saturday) of the epiweek should be reported in the column
-`target_end_date`
- 
-
-The start and end date information of the whole expected timeseries are in the main README
-("Start date for scenarios" and "Simulation end date").
-
-For example, if a round is defined with:
-* Start date for scenarios: October 30, 2022 (first date of simulated transmission/outcomes)
-* Simulation end date: April 29, 2023 (26-week horizon)
-
-Then the weeks ahead projection would corresponds to:
-- target `1 wk ahead`: `2022-10-30 - 1 + (1 * 7)` equals target_end_date: `"2022-11-05"`
-(Saturday), and corresponds to EW44
-- target `2 wk ahead`: `2022-10-30 - 1 + (2 * 7)` equals target_end_date: `"2022-11-12"`
-(Saturday), and corresponds to EW45
-- etc.
-- until target `26 wk ahead`, target_end_date: `"2023-04-29" `
 
 ### `location`
 
@@ -355,30 +355,53 @@ Please note that when writing FIPS codes, they should be written in as a
 character string to preserve any leading zeroes.
 
 
-### `type`
+### `output_type`
 
-Values in the `type` column are either
+Values in the `output_type` column are either
 
-- "point" or
-- "quantile".
-
-This value indicates whether that row corresponds to a point scenario or a 
-quantile scenario. Point scenarios are used in visualization while quantile 
-scenarios are used in visualization and in ensemble construction. 
-
-The "point" value for the `"cum death"`, `"inc death"`, `"cum hosp"`, 
-`"inc hosp"` and `"peak size hosp"` targets is optional. If no "point" values 
-are provided, the quantiles values will be used for visualization
+- "sample" or 
+- "quantile" (optional) or
+- "cdf" (optional)
 
 
-### `quantile`
+This value indicates whether that row corresponds to a "sample" scenario or a
+quantile scenario, etc. 
 
-Values in the `quantile` column are either "NA" (if `type` is "point") or a 
-quantile in the format
+**Scenarios must include "sample" scenario for every
+  scenario-location-target-horizon-age_group group.**
+
+### `output_type_id`
+
+#### `sample`
+
+For the optional simulation samples format only. Values in the `output_type_id` 
+column are numeric between `1` and `100` indicating an id sample number. 
+Each ID number represents one in 100 representative trajectories from the 
+simulations. 
+
+**All scenario-location-target-horizon-age_group group should have a unique 
+associated sample.**
+
+For example:
+
+|origin_date|scenario_id|location|target|horizon|age_group|output_type|output_type_id|value|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|2023-09-03|A-2023-08-14|US|inc death|1|0-130|sample|1||
+|2023-09-03|A-2023-08-14|US|inc death|2|0-130|sample|1||
+|2023-09-03|A-2023-08-14|US|inc death|3|0-130|sample|1||
+||||||||||
+|2023-09-03|A-2023-08-14|US|inc death|1|0-130|sample|2||
+|2023-09-03|A-2023-08-14|US|inc death|2|0-130|sample|2||
+||||||||||
+
+
+#### `quantile` 
+
+Values in the `output_type_id` column are quantiles in the format
 
     0.###
     
-For quantile scenarios, this value indicates the quantile for the `value` in 
+For quantile scenarios, this value indicates the quantile for the `value` in
 this row. 
 
 Teams should provide the following 23 quantiles:
@@ -388,23 +411,65 @@ Teams should provide the following 23 quantiles:
 0.550 0.600 0.650 0.700 0.750, 0.800 0.850 0.900 0.950 0.975 0.990 
 ```
 
-Two optionals additional quantiles can also be submitted: `0`(min) and `1`
-(max). 
+An optional `0`  and `1` value can also be provided.
 
-### `sample`
+For example:
 
-For the optional simulation samples format only. Values in the `sample` column 
-are numeric between `1` and `100` indicating an id sample number.
+|origin_date|scenario_id|location|target|horizon|age_group|output_type|output_type_id|value|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|2023-09-03|A-2023-08-14|US|inc death|1|0-130|quantile|0.010||
+|2023-09-03|A-2023-08-14|US|inc death|1|0-130|quantile|0.025||
+||||||||||
+
+
+#### `cdf`
+
+Values in the `output_type_id` column are the epiweek associated with cumulative 
+probability of the incident hospitalization peak occurring before or during the 
+week that is N weeks after `origin_date` in the format:
+
+    EWYYYYWW
+    
+
+For instance `"EW202337"`` is the probability that hospitalizations peak within 
+the epiweek 2023-37 or before.
+
+Teams should provide the complete time series associated with the round, and the
+`horizon` column should be set to `NA` value. The week 
+information should be in 2 digits format, so if the epiweek is for example 2024-2, 
+then it should be reported as `"EW202402"`. 
+
+It can be calculated by applying:
+
+-  `origin_date` +  7 * `N` - 1 (N being the number of
+week ahead projection in the associated target, e.g `"1 wk ahead"`, 
+`"2 wk ahead"` after the start of the projection), and transform
+the output in epiweek format.
+
+For example:
+```
+# If `origin_date` is "2023-09-03"
+
+# Week 1 will be:
+week1_date = as.Date("2023-09-03") + 7 * 1 - 1
+epiweek1 = MMWRweek::MMWRweek(week1_date) 
+epiweek1 
+
+```
+
+The output file with the cdf should follow this example (following round 4):
+|origin_date|scenario_id|location|target|horizon|age_group|output_type|output_type_id|value|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|2023-09-03|A-2023-08-14|US|inc death|NA|0-130|cdf|EW202336||
+|2023-09-03|A-2023-08-14|US|inc death|NA|0-130|cdf|EW202337||
+||||||||||
+|2023-09-03|A-2023-08-14|US|inc death|NA|0-130|cdf|EW202322||
 
 
 ### `value`
 
-Values in the `value` column are non-negative numbers indicating the "point" or 
-"quantile" prediction for this row. For a "point" prediction, `value` is simply 
-the value of that point prediction for the `target` and `location` associated 
-with that row. For a "quantile" prediction, `value` is the inverse of the cumulative 
-distribution function (CDF) for the `target`, `location`, and `quantile` associated 
-with that row.
+Values in the `value` column are non-negative numbers indicating the associated
+output_type prediction for this row. 
 
 #### Peak time hosp
 
@@ -429,7 +494,7 @@ The `age_group` are optionals, however, the submission should contain at least
 one age group: `0-130`, if multiples `age_group` are provided the overall 
 population should still be provided with the age group `0-130`. 
 
-For the `peak` targets, only the age-group `0-130` is required.
+**For the `peak` targets, only the age-group `0-130` is required.**
 
 ## Scenario validation
 
@@ -469,11 +534,6 @@ plus some information on calibration.
         not before merging the PR.
         - "Success": the validation did not found any issue and returns a message 
         indicating that the validation is a success and the PR can be merged.
-
-    - The PDF file containing the visualization is accessible has an artifact of 
-    the GitHub Actions. 
-    For more information, please see [here](https://docs.github.com/en/actions/managing-workflow-runs/downloading-workflow-artifacts)
-
 
 
 #### Run checks locally
