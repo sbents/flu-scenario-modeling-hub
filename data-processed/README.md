@@ -195,7 +195,7 @@ The submission can contain multiple output type information:
 - A cumulative distribution function for the peak timing target. 
   We will call this format "cdf" output type. For more information, 
   please consult the 
-  [quantile](https://github.com/midas-network/flu-scenario-modeling-hub/tree/mains/data-processed#cdf) 
+  [cdf](https://github.com/midas-network/flu-scenario-modeling-hub/tree/main/data-processed#cdf) 
   section. 
 
 The requested targets are (for "sample" type output):
