@@ -21,8 +21,9 @@ README file.
 
 ## Example
 
-See this file
-for an illustration of part of a (hypothetical) submission files. 
+See this [file](https://github.com/midas-network/flu-scenario-modeling-hub/blob/main/data-processed/MyTeam-MyModel/2023-09-03-MyTeam-MyModel.parquet)
+for an illustration of part of a (hypothetical) submission files with both required
+and optional target information. 
 
 ---
 
