@@ -120,8 +120,8 @@ See hospitalization curves below for reference (2019-20, 2017-18, FluSurvnet dat
 in line with what was reported for the 2017-18 and 2019-20 exemplar seasons. 
 Teams who have developed age-stratified models can use the age-specific VE 
 reported for these two seasons. Notably, the VE for the 2019-20 seasons 
-(A/H1N1-dominated season, scenarios B, D) is stable across all age groups, while 
-the VE for the 2017-18 season (A/H3N2-season, scenarios A, C) has a steep drop 
+(A/H1N1-dominated season, scenarios B, D, F) is stable across all age groups, while 
+the VE for the 2017-18 season (A/H3N2-season, scenarios A, C, E) has a steep drop 
 with increasing age.
 
 - https://www.cdc.gov/flu/vaccines-work/2017-2018.html
