@@ -185,17 +185,17 @@ The submission can contain multiple output type information:
 - 100 representative trajectories from the model simulations. We will 
   call this format "sample" output type. For more information, please
   consult the 
-  [sample](https://github.com/midas-network/flu-scenario-modeling-hub/tree/master/data-processed#sample) 
+  [sample](https://github.com/midas-network/flu-scenario-modeling-hub/tree/main/data-processed#sample) 
   section.
 - A set of quantiles value for all the tarquets (except peak timing).
   We will call this format "quantile" output type. For more information, 
   please consult the 
-  [quantile](https://github.com/midas-network/flu-scenario-modeling-hub/tree/master/data-processed#quantile-and-mean) 
+  [quantile](https://github.com/midas-network/flu-scenario-modeling-hub/tree/main/data-processed#quantile) 
   section. 
 - A cumulative distribution function for the peak timing target. 
   We will call this format "cdf" output type. For more information, 
   please consult the 
-  [quantile](https://github.com/midas-network/flu-scenario-modeling-hub/tree/master/data-processed#quantile-and-mean) 
+  [quantile](https://github.com/midas-network/flu-scenario-modeling-hub/tree/mains/data-processed#cdf) 
   section. 
 
 The requested targets are (for "sample" type output):
@@ -463,7 +463,7 @@ The output file with the cdf should follow this example (following round 4):
 |2023-09-03|A-2023-08-14|US|inc death|NA|0-130|cdf|EW202336||
 |2023-09-03|A-2023-08-14|US|inc death|NA|0-130|cdf|EW202337||
 ||||||||||
-|2023-09-03|A-2023-08-14|US|inc death|NA|0-130|cdf|EW202322||
+|2023-09-03|A-2023-08-14|US|inc death|NA|0-130|cdf|EW202422||
 
 
 ### `value`
