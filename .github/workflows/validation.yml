@@ -36,6 +36,8 @@ jobs:
                   install.packages(c("arrow", "remotes"))
                   remotes::install_url("https://github.com/midas-network/SMHvalidation/archive/refs/heads/main.zip")
                   remotes::install_url("https://github.com/Infectious-Disease-Modeling-Hubs/hubUtils/archive/refs/heads/main.zip")'
+          env: 
+            GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
         - name: Run Validation
           run: |
