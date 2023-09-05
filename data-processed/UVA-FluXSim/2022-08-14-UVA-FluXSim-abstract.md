@@ -63,4 +63,4 @@ Same VE as against symptomatic illness and hospitalization. No age stratificatio
 N/A
 
 ## Other Model Assumptions
-N/A
+Since the outcomes are based on burden estimates, to get reported hospitalizations, an age-stratified multiplier is used to 'undo' the under-detection correction as part of the burden pyramid model. 
