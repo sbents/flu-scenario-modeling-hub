@@ -141,8 +141,7 @@ If the size of the file is larger than 100MB, it should be submitted in a
 
 ## Model results file format
 
-The file must be a comma-separated value (csv) file with the following 
-columns (in any order):
+The file must have the following columns (in any order):
 
 The output file should contains eight columns:
 - `origin_date`
